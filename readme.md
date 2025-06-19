@@ -42,7 +42,7 @@ eduplatform/
 │   └── olx_cleaned.csv
 │
 │
-├──tests/                          # Testlar
+├──tests/                          # Test
 │   ├── test_exporter.py        
 │   ├── test_user.py           
 │   ├── test_student.py   

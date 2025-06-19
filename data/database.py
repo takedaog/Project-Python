@@ -1,9 +1,9 @@
-# Симулирует базу данных с использованием словарей и списков
+# Симулирует базу данных
 
 # Users: ключ - ID, значение - экземпляр User или подкласса (Student, Teacher, и т.п.)
 users = {}
 
-# Assignments: ключ - ID, значение - объект Assignment
+# Assignments: ключ - ID, значение
 assignments = {}
 
 # Grades: список объектов Grade
