@@ -87,7 +87,7 @@ import csv
 from data.database import users, assignments, grades, schedules, notifications
 
 def export_to_csv():
-    """Экспортирует данные в отдельные CSV-файлы по таблицам"""
+    """Экспортирует данные CSV-файлы"""
 
     # Users.csv 
     with open("Users.csv", mode="w", newline='', encoding="utf-8") as f:
