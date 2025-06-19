@@ -1,4 +1,4 @@
-#Реализация функции export_to_xlsx() 
+#export_to_xlsx() 
 
 from openpyxl import Workbook
 from data.database import users, assignments, grades, schedules, notifications
@@ -81,7 +81,7 @@ def export_to_xlsx(filename="eduplatform_export.xlsx"):
     print(f"✅ Exported to {filename}")
 
 
-#export_to_csv() для экспорта всех таблиц в отдельные CSV-файлы
+#export_to_csv()
 
 import csv
 from data.database import users, assignments, grades, schedules, notifications
@@ -165,7 +165,7 @@ def export_to_csv():
 
 
 
-#Экспорт всех таблиц sql
+#Экспорт sql
 
 from data.database import users, assignments, grades, schedules, notifications
 
@@ -174,7 +174,7 @@ def export_to_sql(filename="eduplatform_export.sql"):
 
     sql_lines = []
 
-    # --- CREATE TABLES ---
+    #CREATE TABLES
 
     sql_lines.append("""
 -- Users
@@ -236,7 +236,7 @@ CREATE TABLE Notifications (
 );
 """)
 
-    # --- INSERT DATA ---
+    #INSERT
 
     for u in users.values():
         p = u.get_profile()
@@ -258,7 +258,7 @@ CREATE TABLE Notifications (
         is_read = 1 if n["is_read"] else 0
         sql_lines.append(f"INSERT INTO Notifications VALUES ({n['id']}, '{n['message']}', {n['recipient_id']}, '{n['created_at']}', {is_read}, '{n['priority']}');")
 
-    # --- Save to file ---
+    #Save
     with open(filename, "w", encoding="utf-8") as f:
         f.write("\n".join(sql_lines))
 
