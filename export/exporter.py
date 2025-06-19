@@ -78,7 +78,7 @@ def export_to_xlsx(filename="eduplatform_export.xlsx"):
 
     # Save workbook
     wb.save(filename)
-    print(f"✅ Exported to {filename}")
+    print(f"Exported to {filename}")
 
 
 #export_to_csv()
@@ -87,7 +87,7 @@ import csv
 from data.database import users, assignments, grades, schedules, notifications
 
 def export_to_csv():
-    """📄 Экспортирует данные в отдельные CSV-файлы по таблицам"""
+    """Экспортирует данные в отдельные CSV-файлы по таблицам"""
 
     # Users.csv 
     with open("Users.csv", mode="w", newline='', encoding="utf-8") as f:
@@ -170,7 +170,7 @@ def export_to_csv():
 from data.database import users, assignments, grades, schedules, notifications
 
 def export_to_sql(filename="eduplatform_export.sql"):
-    """📦 Экспортирует данные в SQL-совместимый файл"""
+    """Экспортирует данные в SQL-совместимый файл"""
 
     sql_lines = []
 
