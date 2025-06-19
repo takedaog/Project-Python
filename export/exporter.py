@@ -165,7 +165,7 @@ def export_to_csv():
 
 
 
-#Экспорт всех таблиц в SQL-совместимый .sql файл
+#Экспорт всех таблиц sql
 
 from data.database import users, assignments, grades, schedules, notifications
 
