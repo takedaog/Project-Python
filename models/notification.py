@@ -9,7 +9,7 @@ class Notification:
         self.recipient_id = recipient_id
         self.created_at = datetime.now().isoformat()
         self.is_read = False
-        self.priority = priority  # напр. "normal", "important"
+        self.priority = priority  # "usual", "important"
 
     def send(self):
         """Возвращает структуру уведомления (для добавления получателю)"""

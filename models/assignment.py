@@ -7,7 +7,7 @@ class Assignment:
         self.id = assignment_id
         self.title = title
         self.description = description
-        self.deadline = deadline  # строка ISO: "2025-06-20"
+        self.deadline = deadline  # строка: "2025-06-20"
         self.subject = subject
         self.teacher_id = teacher_id
         self.class_id = class_id

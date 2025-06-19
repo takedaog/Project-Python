@@ -22,5 +22,5 @@ class Schedule:
             print(f"[!] На {time} урок не найден.")
 
     def view_schedule(self):
-        """Вернуть текущее расписание (словарь)"""
+        """Вернуть текущее расписание"""
         return self.lessons
