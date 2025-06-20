@@ -18,8 +18,8 @@ schedule.add_lesson("08:00", "Math", teacher_id=10)
 schedule.add_lesson("09:00", "History", teacher_id=11)
 
 # Удаляет один
-schedule.remove_lesson("10:00")  # должен сказать что такого нет
-schedule.remove_lesson("08:00")  # удаляет
+schedule.remove_lesson("11:00")  # должен сказать что такого нет
+schedule.remove_lesson("09:00")  # удаляет
 
 # Сохраняет расписание в хранилище
 schedules[schedule.class_id] = schedule
